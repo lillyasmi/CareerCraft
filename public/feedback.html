@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Suggestions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="feedback.js"></script>
+
+  <style>
+    /* 🏠 Home button styling */
+    .home-btn {
+      position: fixed;       /* stays at top-left */
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      display: inline-block;
+      margin: 15px 25px;
+      padding: 8px 14px;
+      background: #1e1e1e;
+      border-radius: 6px;
+      color: #ccc;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .home-btn:hover {
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-btn">← Home</a>
+  <div class="container">
+    <h1>📝 Feedback & Suggestions</h1>
+
+    <form id="feedback-form">
+
+      <!-- ⭐ Rating -->
+      <div class="card">
+        <label>Rate your experience:</label>
+        <div id="star-rating" class="star-rating"></div>
+      </div>
+
+      <!-- 😊 Mood -->
+      <div class="card">
+        <label>How do you feel?</label>
+        <div id="mood-select" class="mood-select">
+          <span data-mood="😡">😡</span>
+          <span data-mood="😕">😕</span>
+          <span data-mood="🙂">🙂</span>
+          <span data-mood="😍">😍</span>
+        </div>
+      </div>
+
+      <!-- 🗂️ Category -->
+      <div class="card">
+        <label>Feedback Category:</label>
+        <select id="category">
+          <option value="Resume">Resume</option>
+          <option value="Mock Interview">Mock Interview</option>
+          <option value="Industry Trends">Industry Trends</option>
+          <option value="UI/UX">UI/UX</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- ✍️ Message -->
+      <div class="card">
+        <label>Your Feedback:</label>
+        <textarea id="message" rows="5" maxlength="500"></textarea>
+        <div id="char-count">0 / 500</div>
+      </div>
+
+      <!-- 👤 Contact Info -->
+      <div class="card">
+        <label>
+          <input type="checkbox" id="contact-check">
+          I want to be contacted
+        </label>
+        <div id="contact-info" style="display:none;">
+          <input type="text" id="name" placeholder="Your Name">
+          <input type="email" id="email" placeholder="Your Email">
+        </div>
+      </div>
+
+      <!-- 📎 Screenshot -->
+      <div class="card">
+        <label>Attach Screenshot of Issue (optional):</label>
+        <input type="file" id="screenshot" accept="image/*">
+      </div>
+
+      <!-- ✅ Submit -->
+      <button type="submit" id="submit-feedback">Submit Feedback</button>
+    </form>
+
+    <div id="thankyou" class="thankyou-message" style="display:none;">
+      🎉 Thank you for your feedback!
+    </div>
+  </div>
+</body>
+</html>

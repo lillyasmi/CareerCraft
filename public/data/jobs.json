@@ -1,0 +1,27 @@
+[
+  {
+    "title":"Frontend Developer",
+    "location":"Remote",
+    "required_skills":["JavaScript","React","HTML","CSS"]
+  },
+  {
+    "title":"Backend Developer",
+    "location":"Remote",
+    "required_skills":["Python","REST","SQL","Docker"]
+  },
+  {
+    "title":"Data Analyst",
+    "location":"Onsite",
+    "required_skills":["SQL","Python","Excel"]
+  },
+  {
+    "title":"Machine Learning Engineer",
+    "location":"Remote",
+    "required_skills":["Python","Machine Learning","TensorFlow","PyTorch"]
+  },
+  {
+    "title":"DevOps Engineer",
+    "location":"Remote",
+    "required_skills":["Docker","AWS","Git"]
+  }
+]

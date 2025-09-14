@@ -1,0 +1,18 @@
+#career-advice h2 {
+  color: #2d89ef;
+  margin-top: 1.2rem;
+}
+
+#career-advice ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  list-style-type: disc;
+}
+
+#career-advice li {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+#career-advice p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}

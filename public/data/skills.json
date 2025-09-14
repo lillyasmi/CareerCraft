@@ -1,0 +1,17 @@
+[
+  {"keyword":"Python","category":"Backend"},
+  {"keyword":"JavaScript","category":"Frontend"},
+  {"keyword":"React","category":"Frontend"},
+  {"keyword":"HTML","category":"Frontend"},
+  {"keyword":"CSS","category":"Frontend"},
+  {"keyword":"SQL","category":"Data"},
+  {"keyword":"Machine Learning","category":"ML"},
+  {"keyword":"TensorFlow","category":"ML"},
+  {"keyword":"PyTorch","category":"ML"},
+  {"keyword":"Docker","category":"DevOps"},
+  {"keyword":"AWS","category":"Cloud"},
+  {"keyword":"Azure","category":"Cloud"},
+  {"keyword":"Git","category":"DevOps"},
+  {"keyword":"Node.js","category":"Backend"},
+  {"keyword":"REST","category":"Backend"}
+]

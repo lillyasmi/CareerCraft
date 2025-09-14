@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industry Trends</title>
+  <link rel="stylesheet" href="trends.css">
+</head>
+<body>
+
+  <main class="container">
+    <section id="industry-trends">
+      <div class="header">
+        <a href="index.html" class="home-btn">← Home</a>
+        <h1 class="page-title">📊 Industry Trends</h1>
+      </div>
+      <p class="page-subtitle">Explore market demand, learning paths, and career opportunities.</p>
+
+      <!-- Search Input -->
+      <div class="search-box">
+        <input type="text" id="trend-input" placeholder="Enter a technology (e.g., AI, Cloud, Cybersecurity)">
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- Results Section -->
+      <div id="trend-results" style="display:none;">
+        
+        <div class="card">
+          <h2>📊 Market Overview</h2>
+          <p id="overview"></p>
+        </div>
+
+        <div class="card">
+          <h2>📚 Learning Roadmap</h2>
+          <p id="roadmap"></p>
+        </div>
+
+        <div class="card">
+          <h2>🎓 Certifications</h2>
+          <p id="certifications"></p>
+        </div>
+
+        <div class="card">
+          <h2>📌 Skills in Demand</h2>
+          <canvas id="skillsChart"></canvas>
+        </div>
+
+        <div class="card">
+          <h2>💼 Job Roles & Salaries</h2>
+          <p id="jobs"></p>
+        </div>
+
+        <div class="card">
+          <h2>📰 Latest News & Updates</h2>
+          <div id="news"></div>
+        </div>
+
+        <div class="card">
+          <h2>⚡ AI Career Advice</h2>
+          <p id="ai-advice"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="trends.js"></script>
+</body>
+</html>

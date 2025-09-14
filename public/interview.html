@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Interview</title>
+  <link rel="stylesheet" href="interview.css">
+</head>
+<body>
+
+  <!-- Home Button -->
+  <a href="index.html" class="home-btn">← Home</a>
+
+  <main class="container">
+    <section id="mock-interview">
+      <h1 class="page-title">🗣️ Mock Interview</h1>
+      <p class="page-subtitle">Practice real interview scenarios with instant feedback.</p>
+
+      <!-- Settings Section -->
+      <div class="mock-settings">
+        <label for="role-select">Role:</label>
+        <select id="role-select" class="dropdown">
+          <option value="software">Software Engineer</option>
+          <option value="analyst">Data Analyst</option>
+          <option value="hr">HR Manager</option>
+        </select>
+
+        <label for="type-select">Type:</label>
+        <select id="type-select" class="dropdown">
+          <option value="behavioral">Behavioral</option>
+          <option value="technical">Technical</option>
+          <option value="mixed">Mixed</option>
+        </select>
+
+        <label for="difficulty-select">Difficulty:</label>
+        <select id="difficulty-select" class="dropdown">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <!-- Start Interview button on far right -->
+        <button id="start-interview-btn" class="start-btn">Start Interview</button>
+      </div>
+
+      <!-- Chat Section -->
+      <div id="interview-chat" class="chat-box">
+        <div class="ai-msg">👋 Hello! I’ll be your interviewer today. Ready?</div>
+      </div>
+
+      <!-- Input Section -->
+      <div class="chat-input">
+        <textarea id="answer-input" placeholder="Type your answer here..." rows="3"></textarea>
+        <button id="submit-answer-btn">Submit</button>
+      </div>
+
+      <!-- Summary Section -->
+      <div id="interview-summary" style="display:none; margin-top:20px;">
+        <h2>📊 Interview Summary</h2>
+        <div id="summary-content"></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </main>
+  <script src="interview.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚀 Project Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="planner.css">
+  <script defer src="planner.js"></script>
+</head>
+<body>
+  <a href="index.html" class="home-btn">← Home</a>
+  <div class="container">
+    <h1>📂 Project Planner</h1>
+
+    <!-- Form Section -->
+    <form id="planner-form" class="card">
+      <label>💡 Project Idea:</label>
+      <textarea id="idea" rows="3" placeholder="e.g., AI-powered crop disease prediction system"></textarea>
+
+      <label>🌐 Domain:</label>
+      <select id="domain">
+        <option>Web Development</option>
+        <option>AI / ML</option>
+        <option>IoT</option>
+        <option>Blockchain</option>
+        <option>Cloud</option>
+        <option>Cybersecurity</option>
+        <option>Other</option>
+      </select>
+
+      <label>⏳ Duration:</label>
+      <select id="duration">
+        <option>2 Weeks</option>
+        <option>1 Month</option>
+        <option>3 Months</option>
+        <option>6 Months</option>
+      </select>
+
+      <label>👥 Team Size:</label>
+      <input type="number" id="teamSize" min="1" max="10" value="3">
+
+      <label>⚡ Complexity:</label>
+      <select id="complexity">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <button type="submit" id="generate-plan">Generate Plan</button>
+    </form>
+
+    <!-- Results Section -->
+    <div id="results" class="results" style="display:none;">
+      <h2>📑 Generated Project Plan</h2>
+
+      <div class="card">
+        <h3>📌 Overview</h3>
+        <p id="overview"></p>
+      </div>
+
+      <div class="card">
+        <h3>🛠 Requirements & Technology Stack</h3>
+        <ul id="requirements"></ul>
+      </div>
+
+      <div class="card">
+        <h3>🗂 Roadmap</h3>
+        <ol id="roadmap"></ol>
+      </div>
+
+      <div class="card">
+        <h3>👥 Roles & Responsibilities</h3>
+        <div id="roles"></div>
+      </div>
+
+      <div class="card">
+        <h3>⏳ Timeline</h3>
+        <ul id="timeline"></ul>
+      </div>
+
+      <div class="card">
+        <h3>📦 Deliverables</h3>
+        <ul id="deliverables"></ul>
+      </div>
+
+      <div class="card">
+        <h3>⚠ Risks</h3>
+        <ul id="risks"></ul>
+      </div>
+
+      <div class="card">
+        <h3>💡 Suggestions</h3>
+        <p id="suggestions"></p>
+      </div>
+
+      <button id="download-plan">⬇ Download Plan (PDF)</button>
+    </div>
+  </div>
+</body>
+</html>
