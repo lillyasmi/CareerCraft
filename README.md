@@ -61,6 +61,5 @@ GEMINI_API_KEY=your_google_gemini_api_key
 RESUME_API_KEY=your_gemini_api_key_for_resume
 INTERVIEW_API_KEY=your_gemini_api_key_for_interview
 TRENDS_API_KEY=your_gemini_api_key_for_trends
-
-# If you want to use OpenAI fallback for Project Planner
 OPENAI_API_KEY=your_openai_api_key
+
